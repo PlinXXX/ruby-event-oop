@@ -39,11 +39,7 @@ class Event
 	end
 
 	def self.find_by_email(email)
-		@email = email
-		puts "Voici l'utilisateur correspondant à cet email : #{@email.self}"
+		self.new(email)
 	end
 
 end
-
-e = Event.new("2019-01-13 09:00", '10', "standup quotidien", ['julie@julie.com', 'jean@jean.com'])
-puts e.end_date
